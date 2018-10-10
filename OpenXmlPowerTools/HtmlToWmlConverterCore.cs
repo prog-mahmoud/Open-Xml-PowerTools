@@ -3111,6 +3111,8 @@ namespace OpenXmlPowerTools.HtmlToWml
             {
                 if (textAlign == "right")
                     jc = "right";
+                if (textAlign == "left")
+                    jc = "left";
                 else
                 {
                     if (textAlign == "justify")
