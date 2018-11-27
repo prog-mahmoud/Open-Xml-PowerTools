@@ -1,6 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>net45;net46;netstandard2.0</TargetFrameworks>
+    <PackageId>OpenXmlPowerTools-Arabiainform</PackageId>
+    <Version>1.0.1</Version>
+    <FileVersion>1.0.1.1</FileVersion>
   </PropertyGroup>
 
   <ItemGroup>

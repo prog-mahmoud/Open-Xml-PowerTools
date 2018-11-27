@@ -2620,7 +2620,8 @@ namespace OpenXmlPowerTools.HtmlToWml
             return new XElement(WP.docPr,
                 new XAttribute(NoNamespace.id, pictureId),
                 new XAttribute(NoNamespace.name, pictureDescription),
-                new XAttribute(NoNamespace.descr, (string)element.Attribute(NoNamespace.src)));
+                //new XAttribute(NoNamespace.descr, (string)element.Attribute(NoNamespace.src)));
+                new XAttribute(NoNamespace.descr, "Description of picture"));
         }
 
         private static XElement GetCNvGraphicFramePr()
@@ -2644,7 +2645,8 @@ namespace OpenXmlPowerTools.HtmlToWml
                             new XElement(Pic.cNvPr,
                                 new XAttribute(NoNamespace.id, pictureId),
                                 new XAttribute(NoNamespace.name, pictureDescription),
-                                new XAttribute(NoNamespace.descr, (string)element.Attribute(NoNamespace.src))),
+                                //new XAttribute(NoNamespace.descr, (string)element.Attribute(NoNamespace.src))),
+                                new XAttribute(NoNamespace.descr, "Description of picture")),
                             new XElement(Pic.cNvPicPr,
                                 new XElement(A.picLocks,
                                     new XAttribute(NoNamespace.noChangeAspect, 1),
